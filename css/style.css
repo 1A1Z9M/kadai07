@@ -1,0 +1,25 @@
+
+.star-rate {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.star-rate input[type=radio] {
+  display: none;
+}
+.star-rate label {
+  position: relative;
+  padding: 0 5px;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 35px;
+}
+.star-rate label:hover {
+  color: #ffcc00;
+}
+.star-rate label:hover ~ label {
+  color: #ffcc00;
+}
+.star-rate input[type=radio]:checked ~ label {
+  color: #ffcc00;
+}
